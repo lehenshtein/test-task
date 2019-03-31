@@ -1,0 +1,3 @@
+<app-welcome *ngIf="registered" [name]="name"></app-welcome>
+<app-search (sendData)="onData($event)"></app-search>
+<app-search-results *ngIf="data" [data]="data"></app-search-results>
